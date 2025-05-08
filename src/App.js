@@ -13,9 +13,6 @@ function App() {
         <button>Start a Session</button>
       </div>
 
-      <div className="footer">
-        &copy; 2025 Study Timer App. All rights reserved.
-      </div>
     </div>
   );
 }
