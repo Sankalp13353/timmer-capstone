@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/App.css';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
-import Home from './pages/Home';
-import Timer from './pages/Timer';
+import Home from './pages/home';
+import Timer from './pages/timer';
 
 function App() {
   return (
