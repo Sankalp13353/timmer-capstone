@@ -1,17 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/navbar.css';
-
 
 function Navbar() {
   return (
     <div className="navbar">
-      <div className='left'>
+      <div className="left">
         <h2>Study Timer</h2>
       </div>
       <div className="right">
-        <a href="#">Home</a>
-        <a href="#">Timer</a>
-        <a href="#">About</a>
+        <Link to="/">Home</Link>
+        <Link to="/timer">Timer</Link>
+        <Link to="#">About</Link>
       </div>
     </div>
   );
