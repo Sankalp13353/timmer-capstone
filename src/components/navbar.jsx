@@ -11,7 +11,6 @@ function Navbar() {
       <div className="right">
         <Link to="/">Home</Link>
         <Link to="/timer">Timer</Link>
-        <Link to="#">About</Link>
       </div>
     </div>
   );
