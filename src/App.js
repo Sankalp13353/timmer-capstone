@@ -1,21 +1,23 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/App.css';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
+import Home from './pages/Home';
+import Timer from './pages/Timer';
 
 function App() {
   return (
-    <div className="homePage">
-      <Navbar />
-
-      <div className="main">
-        <h1>Boost Your Productivity with the Pomodoro Technique</h1>
-        <p>Manage your study time efficiently with customized timers and insightful statistics.</p>
-        <button>Start a Session</button>
+    <Router>
+      <div className="homePage">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/timer" element={<Timer />} />
+        </Routes>
+        <Footer />
       </div>
-
-      <Footer />
-    </div>
+    </Router>
   );
 }
 
