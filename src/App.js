@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/App.css';
 import Navbar from './components/navbar';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <button>Start a Session</button>
       </div>
 
+      <Footer />
     </div>
   );
 }
