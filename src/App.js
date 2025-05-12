@@ -1,10 +1,11 @@
+// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './styles/App.css';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
-import Home from './pages/home';
-import Timer from './pages/timer';
+import Home from './components/Home';
+import Timer from './components/Timer';
+import About from './components/about';  // Import the About component
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/timer" element={<Timer />} />
+          <Route path="/about" element={<About />} /> {/* Add About route */}
         </Routes>
         <Footer />
       </div>
